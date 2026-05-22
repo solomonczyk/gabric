@@ -1,25 +1,28 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import { Menu, X, Hammer } from 'lucide-react';
 import Link from 'next/link';
-
-const navItems = [
-  { href: '/', label: 'Početna' },
-  { href: '/usluge', label: 'Usluge' },
-  { href: '/cenovnik', label: 'Cenovnik' },
-  { href: '/portfolio', label: 'Portfolio' },
-  { href: '/o-nama', label: 'O nama' },
-  { href: '/kontakt', label: 'Kontakt' },
-];
+import { navItems } from '@/lib/navigation';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
 
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <header className="fixed top-0 w-full z-50 bg-plaster-white border-b border-concrete-grey">
+    <header
+      className={`fixed top-0 w-full z-50 bg-plaster-white border-b border-concrete-grey transition-shadow ${
+        scrolled ? 'shadow-md' : ''
+      }`}
+    >
       <div className="flex justify-between items-center h-16 px-gutter max-w-container-max mx-auto">
         <div className="flex items-center gap-2">
           <span className="text-primary">

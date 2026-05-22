@@ -1,5 +1,13 @@
+import type { Metadata } from 'next';
 import SectionContainer from '@/components/SectionContainer';
-import { Star, Quote, Building2, Sparkles, Clock, Calendar, Phone, Mail, MapPin } from 'lucide-react';
+import { Star, Quote, Building2, Sparkles, Clock, Calendar } from 'lucide-react';
+import { siteConfig } from '@/lib/siteConfig';
+
+export const metadata: Metadata = {
+  title: 'O nama | Saša Gabrić — Gipsarko Subotica',
+  description:
+    'Decenija iskustva u gipsarskim i molerskim radovima. Osnivač Saša Gabrić i tim Gipsarka.',
+};
 
 export default function ONama() {
   return (
@@ -16,7 +24,7 @@ export default function ONama() {
               Gipsarko nije samo ime firme, to je obećanje kvaliteta koje lično potpisujem od 2014. godine. Moja vizija je bila jednostavna: doneti industrijski standard preciznosti u svaki dom i poslovni prostor u Srbiji.
             </p>
             <p>
-              Specijalizovan za gipsarske radove i moleraj visoke završne obrade, moj pristup se zasniva na "dust-free" tehnologiji i matematičkoj tačnosti. Svaki zid koji obradimo je platno za vaš budući život ili rad.
+              Specijalizovan za gipsarske radove i moleraj visoke završne obrade, moj pristup se zasniva na &quot;dust-free&quot; tehnologiji i matematičkoj tačnosti. Svaki zid koji obradimo je platno za vaš budući život ili rad.
             </p>
             <div className="pt-4">
               <img
@@ -38,7 +46,7 @@ export default function ONama() {
           </div>
           <div className="absolute -bottom-6 -right-6 bg-deep-slate text-plaster-white p-6 max-w-xs shadow-xl">
             <p className="font-body-md text-body-md italic text-concrete-grey">
-              "U poslu molera, jedina granica je milimetar. Ako on nije savršen, posao nije završen."
+              &quot;U poslu molera, jedina granica je milimetar. Ako on nije savršen, posao nije završen.&quot;
             </p>
           </div>
         </div>
@@ -94,7 +102,7 @@ export default function ONama() {
                   <Star className="w-5 h-5 fill-current" />
                 </div>
                 <p className="font-body-lg text-body-lg text-on-surface-variant italic mb-6">
-                  "Angažovali smo Sašu za kompletnu adaptaciju potkrovlja. Preciznost kojom su montirani gipsani profili je neverovatna. Nema nijednog spoja koji se primećuje pod reflektorima. Izuzetno čisto i profesionalno."
+                  &quot;Angažovali smo Sašu za kompletnu adaptaciju potkrovlja. Preciznost kojom su montirani gipsani profili je neverovatna. Nema nijednog spoja koji se primećuje pod reflektorima. Izuzetno čisto i profesionalno.&quot;
                 </p>
               </div>
               <div>
@@ -109,7 +117,7 @@ export default function ONama() {
             <div>
               <Quote className="w-8 h-8 text-construction-amber mb-4" />
               <p className="font-body-md text-body-md text-on-surface mb-6">
-                "Najčistiji moleri sa kojima sam ikada radila. Zaštitili su svaki komad nameštaja i ostavili stan blistavim."
+                &quot;Najčistiji moleri sa kojima sam ikada radila. Zaštitili su svaki komad nameštaja i ostavili stan blistavim.&quot;
               </p>
             </div>
             <div>
@@ -123,7 +131,7 @@ export default function ONama() {
             <div>
               <div className="bg-construction-amber w-8 h-1 mb-6"></div>
               <p className="font-body-md text-body-md text-concrete-grey mb-6">
-                "Brzina i poštovanje rokova su za svaku pohvalu. Gipsani radovi u našoj novoj kancelariji su gotovi pre termina."
+                &quot;Brzina i poštovanje rokova su za svaku pohvalu. Gipsani radovi u našoj novoj kancelariji su gotovi pre termina.&quot;
               </p>
             </div>
             <div>
@@ -136,11 +144,11 @@ export default function ONama() {
           <div className="md:col-span-2 bg-surface-container border border-concrete-grey p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="flex flex-col justify-center">
               <p className="font-body-lg text-body-lg text-on-surface-variant italic">
-                "Kada kažem molerski radovi, od sada mislim samo na Gipsarka. Saša ima neverovatno oko za detalje koje retko koji majstor danas poseduje."
+                &quot;Kada kažem molerski radovi, od sada mislim samo na Gipsarka. Saša ima neverovatno oko za detalje koje retko koji majstor danas poseduje.&quot;
               </p>
               <div className="mt-6">
                 <p className="font-headline-md text-headline-md text-primary">Nikola Stanković</p>
-                <p className="font-label text-label text-on-surface-variant">RESTORAN 'CENTAR'</p>
+                <p className="font-label text-label text-on-surface-variant">RESTORAN &apos;CENTAR&apos;</p>
               </div>
             </div>
             <div className="hidden md:block">
@@ -190,7 +198,7 @@ export default function ONama() {
               <Calendar className="w-6 h-6 text-construction-amber" />
               Radno Vreme
             </div>
-            <div className="font-body-md text-body-md text-on-surface-variant">Dostupni smo radnim danima od 07:00 do 17:00.</div>
+            <div className="font-body-md text-body-md text-on-surface-variant">Dostupni smo radnim danima od {siteConfig.workingHours.weekday}.</div>
           </div>
         </div>
       </SectionContainer>

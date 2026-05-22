@@ -1,6 +1,12 @@
+import type { Metadata } from 'next';
 import SectionContainer from '@/components/SectionContainer';
-import { Hammer, PaintRoller, Info, Calendar, Download } from 'lucide-react';
-import Button from '@/components/Button';
+import { Hammer, PaintRoller, Info, Calendar } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Cenovnik | Gipsarko — Transparentne cene radova u Subotici',
+  description:
+    'Informativni cenovnik gipsarskih i molerskih radova po m². Besplatna procena na terenu.',
+};
 
 export default function Cenovnik() {
   return (
@@ -42,7 +48,7 @@ export default function Cenovnik() {
                   <span className="text-sm text-on-surface-variant">Standardne ploče 12.5mm</span>
                 </div>
                 <div className="col-span-4 lg:col-span-3 text-right flex items-center justify-end">
-                  <span className="font-label text-label text-primary">od 12 € / RSD</span>
+                  <span className="font-label text-label text-primary">od 1.400 RSD / m²</span>
                 </div>
               </div>
               <div className="grid grid-cols-12 p-4 bg-surface-container-low hover:bg-surface-container-high transition-colors">
@@ -51,7 +57,7 @@ export default function Cenovnik() {
                   <span className="text-sm text-on-surface-variant">Debljina profila 50/75/100mm</span>
                 </div>
                 <div className="col-span-4 lg:col-span-3 text-right flex items-center justify-end">
-                  <span className="font-label text-label text-primary">od 18 € / RSD</span>
+                  <span className="font-label text-label text-primary">od 2.100 RSD / m²</span>
                 </div>
               </div>
               <div className="grid grid-cols-12 p-4 bg-plaster-white hover:bg-surface-container-high transition-colors">
@@ -60,16 +66,16 @@ export default function Cenovnik() {
                   <span className="text-sm text-on-surface-variant">Lepljenje gips tabli direktno na zid</span>
                 </div>
                 <div className="col-span-4 lg:col-span-3 text-right flex items-center justify-end">
-                  <span className="font-label text-label text-primary">od 8 € / RSD</span>
+                  <span className="font-label text-label text-primary">od 950 RSD / m²</span>
                 </div>
               </div>
               <div className="grid grid-cols-12 p-4 bg-surface-container-low hover:bg-surface-container-high transition-colors">
                 <div className="col-span-8 lg:col-span-9 flex flex-col">
                   <span className="font-bold text-deep-slate">Skrivači svetla i kaskade</span>
-                  <span className="text-sm text-on-surface-variant">Izrada dekorativnih elemenata (po m')</span>
+                  <span className="text-sm text-on-surface-variant">Izrada dekorativnih elemenata (po m&apos;)</span>
                 </div>
                 <div className="col-span-4 lg:col-span-3 text-right flex items-center justify-end">
-                  <span className="font-label text-label text-primary">od 10 € / RSD</span>
+                  <span className="font-label text-label text-primary">od 1.200 RSD / m</span>
                 </div>
               </div>
             </div>
@@ -94,7 +100,7 @@ export default function Cenovnik() {
                   <span className="text-sm text-on-surface-variant">Uključuje brušenje i pripremu za krečenje</span>
                 </div>
                 <div className="col-span-4 lg:col-span-3 text-right flex items-center justify-end">
-                  <span className="font-label text-label text-primary">od 4 € / RSD</span>
+                  <span className="font-label text-label text-primary">od 480 RSD / m²</span>
                 </div>
               </div>
               <div className="grid grid-cols-12 p-4 bg-surface-container-low hover:bg-surface-container-high transition-colors">
@@ -103,7 +109,7 @@ export default function Cenovnik() {
                   <span className="text-sm text-on-surface-variant">Bela boja, standardni materijali</span>
                 </div>
                 <div className="col-span-4 lg:col-span-3 text-right flex items-center justify-end">
-                  <span className="font-label text-label text-primary">od 2.5 € / RSD</span>
+                  <span className="font-label text-label text-primary">od 300 RSD / m²</span>
                 </div>
               </div>
               <div className="grid grid-cols-12 p-4 bg-plaster-white hover:bg-surface-container-high transition-colors">
@@ -112,7 +118,7 @@ export default function Cenovnik() {
                   <span className="text-sm text-on-surface-variant">Sa upotrebom usisivača (bez prašine)</span>
                 </div>
                 <div className="col-span-4 lg:col-span-3 text-right flex items-center justify-end">
-                  <span className="font-label text-label text-primary">od 1.5 € / RSD</span>
+                  <span className="font-label text-label text-primary">od 180 RSD / m²</span>
                 </div>
               </div>
             </div>
@@ -132,10 +138,6 @@ export default function Cenovnik() {
               <Calendar className="w-5 h-5" />
               Zakaži merenje
             </a>
-            <button className="border border-concrete-grey text-plaster-white px-8 py-4 rounded font-bold text-lg hover:bg-surface-container-highest/10 transition-all flex items-center gap-3">
-              <Download className="w-5 h-5" />
-              Preuzmi PDF cenovnik
-            </button>
           </div>
           <div className="absolute right-0 top-0 w-1/2 h-full opacity-10 pointer-events-none">
             <img

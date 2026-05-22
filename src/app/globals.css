@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@utility font-label-caps {
+  font-family: var(--font-label), monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+@utility text-label-caps {
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 :root {
   --background: #fcfcfc;
   --foreground: #191c1e;

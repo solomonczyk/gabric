@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { Phone, Mail, MapPin, Share2 } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
+import WorkingHours from '@/components/WorkingHours';
 
 export default function Footer() {
   return (
@@ -11,14 +12,6 @@ export default function Footer() {
           <p className="font-body-md text-body-md text-concrete-grey">
             Profesionalni gipsarski i molerski radovi u Subotici. Kvalitet, preciznost i čistoća su naš zaštitni znak.
           </p>
-          <div className="flex gap-4">
-            <a href="#" className="text-construction-amber hover:text-white transition-colors">
-              <Share2 className="w-5 h-5" />
-            </a>
-            <a href="#" className="text-construction-amber hover:text-white transition-colors">
-              <Share2 className="w-5 h-5" />
-            </a>
-          </div>
         </div>
 
         {/* Column 2: Quick Links */}
@@ -55,6 +48,11 @@ export default function Footer() {
                 Kontakt
               </Link>
             </li>
+            <li>
+              <Link href="/politika-privatnosti" className="text-concrete-grey hover:text-construction-amber transition-colors">
+                Politika privatnosti
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -81,7 +79,7 @@ export default function Footer() {
           </div>
           <div className="mt-8 bg-surface-container-high/10 p-4 border border-construction-amber/20">
             <p className="font-body-md text-sm text-concrete-grey uppercase tracking-wider mb-1">Radno vreme:</p>
-            <p className="font-body-md text-sm text-concrete-grey font-bold">Pon-Sub: 07:00 - 17:00</p>
+            <WorkingHours variant="footer" />
           </div>
         </div>
       </div>

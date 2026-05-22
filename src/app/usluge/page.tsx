@@ -1,5 +1,14 @@
+import type { Metadata } from 'next';
 import SectionContainer from '@/components/SectionContainer';
+import TechnicalSpecsTable from '@/components/TechnicalSpecsTable';
+import SectionTitle from '@/components/SectionTitle';
 import { Construction, Building, CheckCircle2 } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Usluge | Gipsarski i Molerski Radovi — Gipsarko Subotica',
+  description:
+    'Spušteni plafoni, pregradni zidovi, rigips konstrukcije i molerski radovi u Subotici. Profesionalno i povoljno.',
+};
 
 export default function Usluge() {
   return (
@@ -140,6 +149,42 @@ export default function Usluge() {
             </div>
           </div>
         </div>
+      </SectionContainer>
+
+      {/* Technical Specs */}
+      <SectionContainer className="bg-surface-container-low">
+        <SectionTitle
+          title="Tehničke Specifikacije i Standardi"
+          subtitle="Sertifikovani materijali i provereni sistemi za vrhunski kvalitet."
+        />
+        <TechnicalSpecsTable
+          specs={[
+            {
+              category: 'Gipsani Sistemi',
+              standard: 'Knauf / Rigips',
+              description: 'Sertifikovani sistemi',
+              details: 'DIN 18181',
+            },
+            {
+              category: 'Priprema Površine',
+              standard: 'Q2 - Q4 Nivo',
+              description: 'Po zahtevu klijenta',
+              details: 'Bez vidljivih spojeva',
+            },
+            {
+              category: 'Materijali',
+              standard: 'Jub / Caparol',
+              description: 'Premijum boje',
+              details: 'ECO sertifikat',
+            },
+            {
+              category: 'Zona Rada',
+              standard: 'Subotica + 30km',
+              description: 'Besplatan izlazak',
+              details: 'Brza reakcija',
+            },
+          ]}
+        />
       </SectionContainer>
 
       {/* Geography Section */}
