@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
-import { Menu, X, Phone } from 'lucide-react';
+import { Menu, X, Hammer } from 'lucide-react';
 import Link from 'next/link';
 
 const navItems = [
@@ -23,10 +23,11 @@ export default function Header() {
       <div className="flex justify-between items-center h-16 px-gutter max-w-container-max mx-auto">
         <div className="flex items-center gap-2">
           <span className="text-primary">
-            <Phone className="w-6 h-6" />
+            <Hammer className="w-6 h-6" />
           </span>
-          <span className="text-headline-md font-headline-md text-primary">
-            GIPSARKO MOLERSKI RADOVI
+          <span className="text-primary leading-tight">
+            <span className="font-headline-md font-extrabold text-headline-md">GIPSARKO</span>{' '}
+            <span className="font-body-md font-light">MOLERSKI RADOVI</span>
           </span>
         </div>
 
