@@ -190,10 +190,10 @@ export default function Home() {
       </SectionContainer>
 
       {/* 6. CTA Banner */}
-      <section className="py-24 bg-construction-amber relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-deep-slate/10 skew-x-[-20deg] translate-x-1/2"></div>
-        <div className="max-w-container-max mx-auto px-gutter relative z-10 text-center">
-          <h2 className="font-headline-xl text-headline-xl text-deep-slate mb-8">
+      <section className="py-16 md:py-24 bg-construction-amber relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-deep-slate/10 skew-x-[-20deg] translate-x-1/2 hidden sm:block"></div>
+        <div className="max-w-container-max mx-auto px-4 md:px-gutter relative z-10 text-center">
+          <h2 className="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-deep-slate mb-8">
             Spremni da započnete renoviranje?
           </h2>
           <div className="mb-12">

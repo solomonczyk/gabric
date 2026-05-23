@@ -16,7 +16,7 @@ export default function ONama() {
       <SectionContainer className="flex flex-col md:flex-row gap-section-padding items-center">
         <div className="w-full md:w-1/2">
           <span className="font-label text-label text-construction-amber mb-4 block">OSNIVAČ I MAJSTOR</span>
-          <h1 className="font-headline-xl text-headline-xl text-primary mb-6 leading-tight">
+          <h1 className="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary mb-6 leading-tight">
             Decenija Preciznosti: <br/>Saša Gabrić
           </h1>
           <div className="space-y-6 font-body-lg text-body-lg text-on-surface-variant">
@@ -54,7 +54,7 @@ export default function ONama() {
 
       {/* Stats Bar */}
       <section className="bg-deep-slate py-8">
-        <div className="max-w-container-max mx-auto px-gutter grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div className="max-w-container-max mx-auto px-4 md:px-gutter grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 text-center">
           <div className="border-r border-concrete-grey last:border-0">
             <div className="font-headline-xl text-headline-xl text-construction-amber">10+</div>
             <div className="font-label text-label text-concrete-grey">GODINA ISKUSTVA</div>

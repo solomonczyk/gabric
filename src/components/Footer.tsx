@@ -5,7 +5,7 @@ import WorkingHours from '@/components/WorkingHours';
 export default function Footer() {
   return (
     <footer className="bg-deep-slate border-t-4 border-construction-amber">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter px-gutter py-section-padding max-w-container-max mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter px-4 md:px-gutter py-12 md:py-section-padding max-w-container-max mx-auto">
         {/* Column 1: Logo & Description */}
         <div className="space-y-6">
           <h3 className="font-headline-md text-headline-md text-plaster-white">GIPSARKO</h3>
@@ -85,7 +85,7 @@ export default function Footer() {
       </div>
 
       {/* Copyright */}
-      <div className="border-t border-concrete-grey/10 py-8 px-gutter text-center">
+      <div className="border-t border-concrete-grey/10 py-8 px-4 md:px-gutter text-center">
         <p className="font-body-md text-body-md text-concrete-grey">
           © 2025 Gipsarko Molerski Radovi · Saša Gabrić
         </p>

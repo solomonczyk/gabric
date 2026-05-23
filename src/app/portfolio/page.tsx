@@ -42,9 +42,9 @@ export default function Portfolio() {
   return (
     <>
       {/* Header Section */}
-      <div className="max-w-container-max mx-auto px-gutter pt-32 pb-12">
+      <div className="max-w-container-max mx-auto px-4 md:px-gutter pt-24 md:pt-32 pb-12">
         <div className="mb-12 border-l-4 border-construction-amber pl-6">
-          <h1 className="font-headline-xl text-headline-xl text-deep-slate mb-4">
+          <h1 className="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-deep-slate mb-4">
             Portfolio: Pre i Posle
           </h1>
           <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">

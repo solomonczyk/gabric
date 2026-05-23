@@ -3,7 +3,7 @@ import { siteConfig } from '@/lib/siteConfig';
 export default function PolitikaPrivatnosti() {
   return (
     <>
-      <section className="max-w-container-max mx-auto px-gutter pt-32 pb-12">
+      <section className="max-w-container-max mx-auto px-4 md:px-gutter pt-24 md:pt-32 pb-12">
         <div className="mb-12 border-l-4 border-construction-amber pl-6">
           <h1 className="font-headline-xl text-headline-xl text-deep-slate mb-4">
             Politika Privatnosti

@@ -63,9 +63,11 @@ export default function Kontakt() {
   return (
     <>
       {/* Hero Section */}
-      <section className="max-w-container-max mx-auto px-gutter mb-12 pt-32">
-        <div className="border-l-4 border-construction-amber pl-6">
-          <h1 className="font-headline-xl text-headline-xl text-deep-slate mb-2">KONTAKTIRAJTE NAS</h1>
+      <section className="max-w-container-max mx-auto px-4 md:px-gutter mb-12 pt-24 md:pt-32">
+        <div className="border-l-4 border-construction-amber pl-4 md:pl-6">
+          <h1 className="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-deep-slate mb-2">
+            KONTAKTIRAJTE NAS
+          </h1>
           <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
             Spremni smo da vaše zidove pretvorimo u remek-delo. Pošaljite nam upit ili nas pozovite direktno za besplatnu procenu radova na vašem objektu.
           </p>
@@ -73,7 +75,7 @@ export default function Kontakt() {
       </section>
 
       {/* Contact Grid */}
-      <section className="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-12 gap-12 mb-12">
+      <section className="max-w-container-max mx-auto px-4 md:px-gutter grid grid-cols-1 md:grid-cols-12 gap-12 mb-12 min-w-0">
         {/* Left Column: Details */}
         <div className="md:col-span-5 space-y-6">
           <div className="bg-surface-container-low p-6 border border-concrete-grey">

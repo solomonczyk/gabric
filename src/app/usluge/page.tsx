@@ -14,7 +14,7 @@ export default function Usluge() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative h-[400px] flex items-center justify-center bg-deep-slate overflow-hidden">
+      <section className="relative min-h-[280px] h-[50vh] max-h-[400px] flex items-center justify-center bg-deep-slate overflow-hidden mt-14 md:mt-0">
         <div className="absolute inset-0 opacity-40">
           <img
             className="w-full h-full object-cover"
@@ -22,9 +22,11 @@ export default function Usluge() {
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnp0yYl1SKEZmXX7Cv9TeNtrXr0MgWgeHVyMhEWj6F1KXh35PvlxAY376OUxOxmVgWauEgosdzrQlMl7Gq8sHvYR5Ks4Be4THDskHTVP-Zvf3HVEfHZdwnN1Vl4tJvAAerF-9nvKU20vKCEs1dtS5KzSV8iUpfEFf6Ubtbe4QbJ5qAslThUAJSfRjXIrdlViYJ5L9fg57MrzH8i90WT-lEZf1jtZWAMpDXs09JeeDcvyfH5ErewVZRgNHK17CUSHLH-Hqjo6F-oZI"
           />
         </div>
-        <div className="relative z-10 text-center text-plaster-white max-w-container-max px-gutter">
+        <div className="relative z-10 text-center text-plaster-white max-w-container-max px-4 md:px-gutter">
           <span className="font-label text-label text-construction-amber uppercase mb-4 block">Naša stručnost</span>
-          <h1 className="font-headline-xl text-headline-xl mb-6">Profesionalne usluge za Vaš enterijer</h1>
+          <h1 className="font-headline-xl text-headline-xl-mobile md:text-headline-xl mb-6">
+            Profesionalne usluge za Vaš enterijer
+          </h1>
           <p className="font-body-lg text-body-lg max-w-2xl mx-auto opacity-90">
             Od grubih gipsarskih radova do najfinijih molerskih tehnika, pretvaramo Vaš prostor u funkcionalno okruženje.
           </p>

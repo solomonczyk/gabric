@@ -27,6 +27,12 @@ export const metadata: Metadata = {
   description: "Profesionalni gipsarski i molerski radovi u Subotici i okolini. Montaža pregrada, spuštenih plafona, rigips konstrukcija i završnih molerskih radova.",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -37,9 +43,9 @@ export default function RootLayout({
       lang="sr"
       className={`${hankenGrotesk.variable} ${workSans.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col overflow-x-hidden">
         <Header />
-        <main className="mt-16 flex-1">{children}</main>
+        <main className="mt-14 md:mt-16 flex-1 w-full min-w-0">{children}</main>
         <Footer />
       </body>
     </html>
