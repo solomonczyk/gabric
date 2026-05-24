@@ -13,34 +13,32 @@ export default function ONama() {
   return (
     <>
       {/* Hero Section: The Founder Story */}
-      <SectionContainer className="flex flex-col md:flex-row gap-section-padding items-center bg-dark-primary">
-        <div className="w-full md:w-1/2">
-          <span className="font-label text-label text-gold-primary mb-4 block tracking-[0.15em]">OSNIVAČ I MAJSTOR</span>
+      <SectionContainer className="flex flex-col gap-8 bg-dark-primary">
+        <div className="w-full max-w-4xl mx-auto">
           <h1 className="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-white mb-6 leading-tight">
-            Saša Gabrić — majstor kome možete verovati
+            Saša Gabrić — majstor za gips i molerske radove
           </h1>
           <div className="space-y-6 font-body-lg text-body-lg text-text-light">
             <p>
-              Saša Gabrić je majstor sa 9 godina iskustva u gipsarskim, molerskim i završnim enterijerskim radovima. Njegov pristup je jednostavan: jasan dogovor, precizan rad, uredna izvedba i rezultat koji klijent može dugo da koristi bez dodatnih popravki.
+              Saša Gabrić je majstor sa 9 godina iskustva u radu sa gips-kartonom, spuštenim plafonima, pregradnim zidovima i molerskim radovima. Njegov pristup se zasniva na jasnom dogovoru, preciznoj izvedbi, urednom radu i poštovanju rokova.
             </p>
             <p>
-              Bilo da je potrebno uraditi gipsane ploče, spušteni plafon, pregradni zid, gletovanje ili krečenje, Saša svakom prostoru pristupa pažljivo — od pripreme površina do završne kontrole detalja.
+              Bilo da je potrebno uraditi gipsane ploče, rigips konstrukciju, spušteni plafon, pregradni zid ili završno krečenje, Saša svakom prostoru pristupa pažljivo — od pripreme do završnog izgleda.
             </p>
             <p>
-              Cilj nije samo da se posao završi, već da prostor izgleda čisto, ravno, skladno i spremno za svakodnevni život.
+              Cilj je da prostor bude ravan, čist, funkcionalan i estetski sređen, bez nepotrebnog komplikovanja i bez skrivenih troškova. Klijent dobija majstora koji zna svoj posao, poštuje dogovor i radi tako da se rezultat vidi odmah.
             </p>
           </div>
         </div>
-        <div className="w-full md:w-1/2 relative">
-          <div className="absolute -top-4 -left-4 w-24 h-24 border-t-4 border-l-4 border-gold-primary z-0"></div>
-          <div className="relative z-10 border border-outline-variant overflow-hidden">
+        <div className="w-full max-w-4xl mx-auto relative">
+          <div className="border border-outline-variant overflow-hidden">
             <img
               alt="Saša Gabrić na radu"
               className="w-full hover:scale-105 transition-transform duration-700"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4uv6tXyXLZ3XB0cPaU4mPBMChxdAUNic6-P-TmisnMb0f4Nx0_xaJ4WtDJZ7GqPrVsttbboLEYF_Z9O2YDFK0FhZY1vDY4-V9uDZGsfxukQLWqr7nR2at28zY-Yiq_xbMGVbS8Ca5k81RPblVRAjBrXS6cns5YJIJZL6O0EYs1TyrJ6_4dMfn6oamPLiYd-bVq5igSV9q0TjJ0uJVQ9-630P4Mja0QuUOehsi4_WLoAd6vy64n1_KDxnFDZiGiUrgZxnQrqY2qpY"
             />
           </div>
-          <div className="absolute -bottom-6 -right-6 bg-dark-graphite text-white p-6 max-w-xs shadow-xl border-l-2 border-gold-primary">
+          <div className="absolute -bottom-6 right-6 bg-dark-graphite text-white p-6 max-w-xs shadow-xl border-l-2 border-gold-primary">
             <p className="font-body-md text-body-md italic text-text-light">
               &quot;U poslu molera, jedina granica je milimetar. Ako on nije savršen, posao nije završen.&quot;
             </p>
@@ -52,7 +50,7 @@ export default function ONama() {
       <section className="bg-dark-primary border-y border-outline-variant/30 py-8">
         <div className="max-w-container-max mx-auto px-4 md:px-gutter grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 text-center">
           <div className="border-r border-outline-variant last:border-0">
-            <div className="font-headline-xl text-headline-xl text-gold-primary">10+</div>
+            <div className="font-headline-xl text-headline-xl text-gold-primary">9+</div>
             <div className="font-label text-label text-text-light">GODINA ISKUSTVA</div>
           </div>
           <div className="border-r border-outline-variant last:border-0">
