@@ -7,23 +7,23 @@ import type { PortfolioPair } from '@/lib/portfolio';
 function PortfolioCard({ pair }: { pair: PortfolioPair }) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 group">
-      <div className="relative overflow-hidden border border-concrete-grey">
+      <div className="relative overflow-hidden border border-outline-variant">
         <img
           src={pair.before.image}
           alt={pair.before.label}
           className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
         />
-        <div className="absolute top-3 left-3 bg-deep-slate/80 text-plaster-white px-2 py-1 text-xs font-label tracking-wider">
+        <div className="absolute top-3 left-3 bg-dark-primary/80 text-white px-2 py-1 text-xs font-label tracking-wider border-l-2 border-gold-primary">
           {pair.before.label}
         </div>
       </div>
-      <div className="relative overflow-hidden border border-concrete-grey">
+      <div className="relative overflow-hidden border border-outline-variant">
         <img
           src={pair.after.image}
           alt={pair.after.label}
           className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
         />
-        <div className="absolute top-3 left-3 bg-construction-amber/90 text-deep-slate px-2 py-1 text-xs font-label tracking-wider">
+        <div className="absolute top-3 left-3 bg-gold-primary/90 text-dark-primary px-2 py-1 text-xs font-label tracking-wider">
           {pair.after.label}
         </div>
       </div>
@@ -43,11 +43,11 @@ export default function Portfolio() {
     <>
       {/* Header Section */}
       <div className="max-w-container-max mx-auto px-4 md:px-gutter pt-24 md:pt-32 pb-12">
-        <div className="mb-12 border-l-4 border-construction-amber pl-6">
-          <h1 className="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-deep-slate mb-4">
+        <div className="mb-12 border-l-4 border-gold-primary pl-6">
+          <h1 className="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-white mb-4">
             Portfolio: Pre i Posle
           </h1>
-          <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+          <p className="font-body-lg text-body-lg text-text-light max-w-2xl">
             Uvid u proces našeg rada. Uporedite fazu pre i posle završetka radova.
           </p>
         </div>
@@ -57,10 +57,10 @@ export default function Portfolio() {
           <button
             type="button"
             onClick={() => setActiveFilter('svi')}
-            className={`px-6 py-3 font-label text-label border border-concrete-grey rounded transition-all ${
+            className={`px-6 py-3 font-label text-label border rounded-sm transition-all ${
               activeFilter === 'svi'
-                ? 'bg-construction-amber text-deep-slate border-construction-amber'
-                : 'hover:border-construction-amber'
+                ? 'bg-gold-primary text-dark-primary border-gold-primary'
+                : 'border-outline-variant text-text-light hover:border-gold-primary'
             }`}
           >
             Svi projekti
@@ -68,10 +68,10 @@ export default function Portfolio() {
           <button
             type="button"
             onClick={() => setActiveFilter('gips')}
-            className={`px-6 py-3 font-label text-label border border-concrete-grey rounded transition-all ${
+            className={`px-6 py-3 font-label text-label border rounded-sm transition-all ${
               activeFilter === 'gips'
-                ? 'bg-construction-amber text-deep-slate border-construction-amber'
-                : 'hover:border-construction-amber'
+                ? 'bg-gold-primary text-dark-primary border-gold-primary'
+                : 'border-outline-variant text-text-light hover:border-gold-primary'
             }`}
           >
             Gipsarski radovi
@@ -79,10 +79,10 @@ export default function Portfolio() {
           <button
             type="button"
             onClick={() => setActiveFilter('moler')}
-            className={`px-6 py-3 font-label text-label border border-concrete-grey rounded transition-all ${
+            className={`px-6 py-3 font-label text-label border rounded-sm transition-all ${
               activeFilter === 'moler'
-                ? 'bg-construction-amber text-deep-slate border-construction-amber'
-                : 'hover:border-construction-amber'
+                ? 'bg-gold-primary text-dark-primary border-gold-primary'
+                : 'border-outline-variant text-text-light hover:border-gold-primary'
             }`}
           >
             Molerski radovi

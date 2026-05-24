@@ -11,7 +11,7 @@ export default function WorkingHours({
 }: WorkingHoursProps) {
   if (variant === 'footer') {
     return (
-      <p className={`font-body-md text-sm text-concrete-grey font-bold ${className}`}>
+      <p className={`font-body-md text-sm text-text-light font-bold ${className}`}>
         {siteConfig.workingHours.weekday}
         <br />
         {siteConfig.workingHours.saturday}

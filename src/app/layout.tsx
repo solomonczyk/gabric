@@ -3,6 +3,7 @@ import { Hanken_Grotesk, Work_Sans, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { siteConfig } from "@/lib/siteConfig";
 
 const hankenGrotesk = Hanken_Grotesk({
   variable: "--font-headline",
@@ -23,8 +24,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "GIPSARKO MOLERSKI RADOVI | Profesionalni Gipsarski i Molerski Radovi Subotica",
-  description: "Profesionalni gipsarski i molerski radovi u Subotici i okolini. Montaža pregrada, spuštenih plafona, rigips konstrukcija i završnih molerskih radova.",
+  title: siteConfig.seo.title,
+  description: siteConfig.seo.description,
 };
 
 export const viewport = {

@@ -17,16 +17,16 @@ export default function SectionTitle({
   return (
     <div className={`mb-12 ${align}`}>
       {label && (
-        <span className="font-label-caps text-label-caps text-construction-amber mb-2 inline-block">
+        <span className="font-label-caps text-label-caps text-gold-primary mb-2 inline-block tracking-[0.15em]">
           {label}
         </span>
       )}
-      <h2 className="font-headline-lg text-headline-lg text-deep-slate mb-4">
+      <h2 className="font-headline-lg text-headline-lg text-white mb-4">
         {title}
       </h2>
-      <div className={`h-1 w-24 bg-construction-amber ${lineMargin}`} />
+      <div className={`h-1 w-24 bg-gold-primary ${lineMargin}`} />
       {subtitle && (
-        <p className="font-body-lg text-body-lg text-on-surface-variant mt-4 max-w-2xl">
+        <p className="font-body-lg text-body-lg text-text-light mt-4 max-w-2xl">
           {subtitle}
         </p>
       )}

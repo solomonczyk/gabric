@@ -16,19 +16,13 @@
 }
 
 :root {
-  --background: #fcfcfc;
-  --foreground: #191c1e;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #1f2937;
-    --foreground: #f8f9fb;
-  }
+  --background: #0A0A0A;
+  --foreground: #FFFFFF;
 }
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -37,4 +31,24 @@ body {
   font-family: var(--font-body);
   overflow-x: hidden;
   max-width: 100vw;
+}
+
+::selection {
+  background: #F5B400;
+  color: #050505;
+}
+
+/* Gold accent scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F5B400;
 }
