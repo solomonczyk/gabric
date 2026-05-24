@@ -6,7 +6,7 @@ export const siteConfig = {
   location: 'Subotica i okolina, Srbija',
   workingHours: {
     weekday: 'Pon - Pet: 07:00 - 17:00',
-    saturday: 'Subota: 08:00 - 14:00',
+    saturday: 'Subota i nedelja: po dogovoru',
     banner: 'DOSTUPNI SMO SVAKOG RADNOG DANA OD 08:00 DO 18:00',
   },
   company: {
