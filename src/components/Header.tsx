@@ -38,18 +38,12 @@ export default function Header() {
     >
       <div className="flex justify-between items-center h-14 md:h-16 gap-2 px-4 md:px-gutter max-w-container-max mx-auto min-w-0">
         <Link href="/" className="flex items-center gap-3 min-w-0 shrink group">
-          {/* SG Logo Mark */}
-          <div className="w-9 h-9 md:w-10 md:h-10 bg-gold-primary rounded-sm flex items-center justify-center shrink-0 group-hover:bg-gold-accent transition-colors">
-            <span className="font-headline font-extrabold text-sm md:text-base text-dark-primary">SG</span>
-          </div>
-          <div className="min-w-0">
-            <span className="font-headline font-extrabold text-base md:text-headline-md text-white block leading-tight group-hover:text-gold-primary transition-colors">
-              GIPSARKO
-            </span>
-            <span className="text-xs md:text-sm text-text-light font-body hidden sm:block leading-tight">
-              Molerski Radovi Subotica
-            </span>
-          </div>
+          {/* SG Logo */}
+          <img
+            src="/logo-sg.png"
+            alt="SG Gipsarko"
+            className="h-8 md:h-10 w-auto shrink-0"
+          />
         </Link>
 
         <nav className="hidden md:flex gap-6 lg:gap-8 shrink-0">
