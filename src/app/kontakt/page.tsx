@@ -208,8 +208,7 @@ export default function Kontakt() {
                       >
                         <option>Gipsarski radovi</option>
                         <option>Molerski radovi</option>
-                        <option>Fasade</option>
-                        <option>Kompletna adaptacija</option>
+<option>Kompletna adaptacija</option>
                       </select>
                     </div>
                   </div>

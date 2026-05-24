@@ -30,7 +30,7 @@ export default function Footer() {
             <img
               src="/logo-sg.png"
               alt="SG Gipsarko"
-              className="h-10 w-auto shrink-0"
+              className="h-12 md:h-14 w-auto shrink-0"
             />
           </div>
           <p className="font-body-md text-body-md text-text-light">

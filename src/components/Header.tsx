@@ -42,7 +42,7 @@ export default function Header() {
           <img
             src="/logo-sg.png"
             alt="SG Gipsarko"
-            className="h-8 md:h-10 w-auto shrink-0"
+            className="h-10 md:h-12 w-auto shrink-0"
           />
         </Link>
 
