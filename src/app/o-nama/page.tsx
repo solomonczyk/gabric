@@ -17,14 +17,17 @@ export default function ONama() {
         <div className="w-full md:w-1/2">
           <span className="font-label text-label text-gold-primary mb-4 block tracking-[0.15em]">OSNIVAČ I MAJSTOR</span>
           <h1 className="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-white mb-6 leading-tight">
-            Decenija Preciznosti: <br/>Saša Gabrić
+            Saša Gabrić — majstor kome možete verovati
           </h1>
           <div className="space-y-6 font-body-lg text-body-lg text-text-light">
             <p>
-              Gipsarko nije samo ime firme, to je obećanje kvaliteta koje lično potpisujem od 2014. godine. Moja vizija je bila jednostavna: doneti industrijski standard preciznosti u svaki dom i poslovni prostor u Srbiji.
+              Saša Gabrić je majstor sa 9 godina iskustva u gipsarskim, molerskim i završnim enterijerskim radovima. Njegov pristup je jednostavan: jasan dogovor, precizan rad, uredna izvedba i rezultat koji klijent može dugo da koristi bez dodatnih popravki.
             </p>
             <p>
-              Specijalizovan za gipsarske radove i moleraj visoke završne obrade, moj pristup se zasniva na &quot;dust-free&quot; tehnologiji i matematičkoj tačnosti. Svaki zid koji obradimo je platno za vaš budući život ili rad.
+              Bilo da je potrebno uraditi gipsane ploče, spušteni plafon, pregradni zid, gletovanje ili krečenje, Saša svakom prostoru pristupa pažljivo — od pripreme površina do završne kontrole detalja.
+            </p>
+            <p>
+              Cilj nije samo da se posao završi, već da prostor izgleda čisto, ravno, skladno i spremno za svakodnevni život.
             </p>
             <div className="pt-4">
               <img
