@@ -138,7 +138,7 @@ export default function ONama() {
           <div className="md:col-span-2 bg-dark-graphite border border-outline-variant p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="flex flex-col justify-center">
               <p className="font-body-lg text-body-lg text-text-light italic">
-                &quot;Kada kažem molerski radovi, od sada mislim samo na Gipsarka. Saša ima neverovatno oko za detalje koje retko koji majstor danas poseduje.&quot;
+                &quot;Kada kažem molerski radovi, od sada mislim samo na SG. Saša ima neverovatno oko za detalje koje retko koji majstor danas poseduje.&quot;
               </p>
               <div className="mt-6">
                 <p className="font-headline-md text-headline-md text-gold-primary">Nikola Stanković</p>
