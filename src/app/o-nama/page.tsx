@@ -29,13 +29,6 @@ export default function ONama() {
             <p>
               Cilj nije samo da se posao završi, već da prostor izgleda čisto, ravno, skladno i spremno za svakodnevni život.
             </p>
-            <div className="pt-4">
-              <img
-                alt="Potpis Saše Gabrića"
-                className="h-16 opacity-60"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYmlINUdRVnvFstY1XSj2eRnKMsfv6Na6h5L-d_pVwxviiDmFv2k7283KNNmC21RPJ4zqZ4TSccWuinn4eFOkwU-ucjQaAWhNgUZPCpjOe9rjm7DxSSzA9iZ6a9h2EJH8tYPjP_nxtm2W7LcVVJb5b7GnTjDqTD3CcgTOk5MAQZgLhD5RClxwWTZt0B_0ZxL5IPCEpqA_CnvlFtTqUgK5ZTocXuhixNe0ZgnC7R1B7Z05Wbrf03um1dEbmu1qOOup8EqM8X_NaViE"
-              />
-            </div>
           </div>
         </div>
         <div className="w-full md:w-1/2 relative">
