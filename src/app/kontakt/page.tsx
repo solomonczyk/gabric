@@ -79,7 +79,7 @@ export default function Kontakt() {
         {/* Left Column: Details */}
         <div className="md:col-span-5 space-y-6">
           <div className="bg-dark-graphite p-6 border border-outline-variant">
-            <span className="font-label text-label text-gold-primary block mb-4 tracking-[0.15em]">DETALJI O FIRMI</span>
+            <span className="font-label text-label text-gold-primary block mb-4 tracking-[0.15em]">Saša Gabrić</span>
             <div className="space-y-6">
               <div className="flex gap-4">
                 <MapPin className="w-6 h-6 text-gold-primary flex-shrink-0 mt-1" />
