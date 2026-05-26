@@ -40,7 +40,7 @@ export default function ONama() {
           </div>
           <div className="absolute -bottom-6 right-6 bg-dark-graphite text-white p-6 max-w-xs shadow-xl border-l-2 border-gold-primary">
             <p className="font-body-md text-body-md italic text-text-light">
-              &quot;U poslu molera, jedina granica je milimetar. Ako on nije savršen, posao nije završen.&quot;
+              &quot;Precizna konstrukcija je osnova svakog dobrog prostora — kada su linije ravne, spojevi čvrsti i detalji uredni, rezultat traje.&quot;
             </p>
           </div>
         </div>

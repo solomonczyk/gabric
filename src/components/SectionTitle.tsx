@@ -26,7 +26,7 @@ export default function SectionTitle({
       </h2>
       <div className={`h-1 w-24 bg-gold-primary ${lineMargin}`} />
       {subtitle && (
-        <p className="font-body-lg text-body-lg text-text-light mt-4 max-w-2xl">
+        <p className="font-body-lg text-body-lg text-text-light mt-4">
           {subtitle}
         </p>
       )}
