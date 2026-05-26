@@ -27,13 +27,11 @@ export default function Footer() {
         {/* Column 1: Logo & Description */}
         <div className="space-y-6">
           <div className="flex items-center gap-3">
-            <div className="bg-white p-2 md:p-2.5 rounded-sm shrink-0">
-              <img
-                src="/logo-sg.png"
-                alt="SG Gipsarko"
-                className="h-10 md:h-11 w-auto"
-              />
-            </div>
+            <img
+              src="/logo-sg.png"
+              alt="SG Gipsarko"
+              className="h-14 md:h-16 w-auto shrink-0"
+            />
           </div>
           <p className="font-body-md text-body-md text-text-light">
             Profesionalni gipsarski i molerski radovi u Subotici. Kvalitet, preciznost i čistoća su naš zaštitni znak.
