@@ -5,7 +5,6 @@ import ServiceCard from '@/components/ServiceCard';
 import TechnicalSpecsTable from '@/components/TechnicalSpecsTable';
 import Button from '@/components/Button';
 import { services } from '@/lib/services';
-import { portfolioPairs } from '@/lib/portfolio';
 import { siteConfig } from '@/lib/siteConfig';
 import {
   Shield,
@@ -112,7 +111,7 @@ export default function Home() {
       <section className="bg-dark-primary border-y border-outline-variant/30 py-8">
         <div className="max-w-container-max mx-auto px-4 md:px-gutter grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 text-center">
           <div className="border-r border-outline-variant last:border-0">
-            <div className="font-headline-xl text-headline-xl text-gold-primary">10+</div>
+            <div className="font-headline-xl text-headline-xl text-gold-primary">9+</div>
             <div className="font-label text-label text-text-light">GODINA ISKUSTVA</div>
           </div>
           <div className="border-r border-outline-variant last:border-0">
@@ -133,7 +132,7 @@ export default function Home() {
       {/* 3. Why Us Section */}
       <SectionContainer className="bg-dark-graphite">
         <SectionTitle
-          title="Zašto Izabrati SG Gipsarko?"
+          title="Zašto Izabrati SG gipsarko_molerski_radovi_subotica?"
           subtitle="Profesionalizam i preciznost na svakom projektu."
         />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-base">
@@ -243,50 +242,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 6. Portfolio: Pre i Posle */}
-      <SectionContainer className="bg-dark-primary">
-        <SectionTitle
-          title="Portfolio: Pre i Posle"
-          subtitle="Pogledajte transformaciju prostora kroz naše faze rada — od grubih konstrukcija do finalnog rezultata."
-        />
-        <div className="space-y-12">
-          {portfolioPairs.map((pair) => (
-            <div
-              key={pair.id}
-              className="grid grid-cols-1 md:grid-cols-2 gap-gutter group"
-            >
-              <div className="relative overflow-hidden border border-outline-variant">
-                <img
-                  src={pair.before.image}
-                  alt={pair.before.label}
-                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute top-4 left-4 bg-dark-primary/80 text-white px-3 py-1 font-label-caps text-xs border-l-2 border-gold-primary">
-                  {pair.before.label}
-                </div>
-              </div>
-              <div className="relative overflow-hidden border border-outline-variant">
-                <img
-                  src={pair.after.image}
-                  alt={pair.after.label}
-                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute top-4 left-4 bg-gold-primary text-dark-primary px-3 py-1 font-label-caps text-xs">
-                  {pair.after.label}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-        <div className="text-center mt-12">
-          <Link
-            href="/portfolio"
-            className="bg-gold-primary text-dark-primary px-8 py-4 rounded-sm font-bold inline-block hover:bg-gold-accent transition-all"
-          >
-            Pogledajte Sve Radove
-          </Link>
-        </div>
-      </SectionContainer>
 
       {/* 7. Technical Specs */}
       <SectionContainer className="bg-dark-graphite">

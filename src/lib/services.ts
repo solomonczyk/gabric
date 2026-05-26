@@ -20,7 +20,7 @@ export const services: Service[] = [
     id: 'molerski',
     title: 'Molerski Radovi',
     description:
-      'Gletovanje, krečenje i nanošenje dekorativnih tehnika uz maksimalnu čistoću.',
+      'Gletovanje, krečenje uz maksimalnu čistoću.',
     image:
       'https://lh3.googleusercontent.com/aida-public/AB6AXuC-l3XBxbK3dFHylkS4zxa6469k4OL7M5-kpM3T1H-iC2zfR8N2rcUerZ0-Kg4eWHGEAwz4wWUFAChc1Uws8RS-4gtWZZrryqQ7GngjQDG2ADQr83wueSS8eLE73XgBLVilOLhyseYDtkekP4oShN-3jfc_ynLTSkWmzBWE_LZdVTTXANju-yGFIpTfuN2JJH7ygP9UAXGmIlXpdV6crAFjsoJnp2p3HKJJIDYT4210MQGN-CQmtifUsBEuPEnVWQG7Nf5qOqyc048',
     priceLabel: 'OD 3.5€/m²',

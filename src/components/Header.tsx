@@ -39,11 +39,13 @@ export default function Header() {
       <div className="flex justify-between items-center h-14 md:h-16 gap-2 px-4 md:px-gutter max-w-container-max mx-auto min-w-0">
         <Link href="/" className="flex items-center gap-3 min-w-0 shrink group">
           {/* SG Logo */}
-          <img
-            src="/logo-sg.png"
-            alt="SG Gipsarko"
-            className="h-10 md:h-12 w-auto shrink-0"
-          />
+          <div className="bg-white p-1.5 md:p-2 rounded-sm shrink-0">
+            <img
+              src="/logo-sg.png"
+              alt="SG Gipsarko"
+              className="h-8 md:h-10 w-auto"
+            />
+          </div>
         </Link>
 
         <nav className="hidden md:flex gap-6 lg:gap-8 shrink-0">
