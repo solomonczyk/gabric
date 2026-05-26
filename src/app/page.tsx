@@ -111,7 +111,7 @@ export default function Home() {
       <section className="bg-dark-primary border-y border-outline-variant/30 py-8">
         <div className="max-w-container-max mx-auto px-4 md:px-gutter grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 text-center">
           <div className="border-r border-outline-variant last:border-0">
-            <div className="font-headline-xl text-headline-xl text-gold-primary">10+</div>
+            <div className="font-headline-xl text-headline-xl text-gold-primary">9+</div>
             <div className="font-label text-label text-text-light">GODINA ISKUSTVA</div>
           </div>
           <div className="border-r border-outline-variant last:border-0">
