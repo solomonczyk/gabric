@@ -71,7 +71,7 @@ const processSteps = [
     icon: Paintbrush,
     step: '04',
     title: 'Krečenje i završni izgled',
-    description: 'Finalni molerski radovi — krečenje i dekorativne tehnike koje prostoru daju konačan, vrhunski izgled.',
+    description: 'Finalni molerski radovi — krečenje i završna obrada koja prostoru daju konačan, vrhunski izgled.',
   },
 ];
 

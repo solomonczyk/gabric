@@ -38,8 +38,8 @@ export default function ONama() {
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4uv6tXyXLZ3XB0cPaU4mPBMChxdAUNic6-P-TmisnMb0f4Nx0_xaJ4WtDJZ7GqPrVsttbboLEYF_Z9O2YDFK0FhZY1vDY4-V9uDZGsfxukQLWqr7nR2at28zY-Yiq_xbMGVbS8Ca5k81RPblVRAjBrXS6cns5YJIJZL6O0EYs1TyrJ6_4dMfn6oamPLiYd-bVq5igSV9q0TjJ0uJVQ9-630P4Mja0QuUOehsi4_WLoAd6vy64n1_KDxnFDZiGiUrgZxnQrqY2qpY"
             />
           </div>
-          <div className="absolute -bottom-6 right-6 bg-dark-graphite text-white p-6 max-w-xs shadow-xl border-l-2 border-gold-primary">
-            <p className="font-body-md text-body-md italic text-text-light">
+          <div className="absolute -bottom-6 right-0 md:right-6 bg-dark-graphite text-white p-4 md:p-6 max-w-[180px] xs:max-w-xs md:max-w-xs shadow-xl border-l-2 border-gold-primary">
+            <p className="font-body-md text-body-md md:text-body-md text-sm md:text-base italic text-text-light">
               &quot;Precizna konstrukcija je osnova svakog dobrog prostora — kada su linije ravne, spojevi čvrsti i detalji uredni, rezultat traje.&quot;
             </p>
           </div>

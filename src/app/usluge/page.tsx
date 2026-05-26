@@ -129,7 +129,7 @@ export default function Usluge() {
               <h2 className="font-headline-lg text-headline-lg text-white">Molerski radovi</h2>
             </div>
             <p className="font-body-lg text-body-lg text-text-light">
-              Završni molerski radovi koji daju vašem prostoru karakter i stil. Od fino gletovanja do dekorativnih tehnika, svaki detalj je pažljivo izveden.
+              Završni molerski radovi koji daju vašem prostoru karakter i stil. Od fino gletovanja do krečenja, svaki detalj je pažljivo izveden.
             </p>
             <div className="bg-dark-graphite p-6 border-l-4 border-gold-primary">
               <ul className="space-y-4">
@@ -140,10 +140,6 @@ export default function Usluge() {
                 <li className="flex gap-3">
                   <CheckCircle2 className="w-5 h-5 text-gold-primary flex-shrink-0" />
                   <span className="font-body-md text-text-light">Krečenje svih vrsta boja i tehnika</span>
-                </li>
-                <li className="flex gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-gold-primary flex-shrink-0" />
-                  <span className="font-body-md text-text-light">Dekorativne tehnike (venecijanka, stucco)</span>
                 </li>
               </ul>
             </div>
