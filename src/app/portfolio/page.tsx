@@ -1,10 +1,6 @@
-'use client';
-
-import { useState } from 'react';
 import { portfolioPairs } from '@/lib/portfolio';
-import type { PortfolioPair } from '@/lib/portfolio';
 
-function PortfolioCard({ pair }: { pair: PortfolioPair }) {
+function PortfolioCard({ pair }: { pair: (typeof portfolioPairs)[number] }) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 group">
       <div className="relative overflow-hidden border border-outline-variant">
@@ -13,9 +9,6 @@ function PortfolioCard({ pair }: { pair: PortfolioPair }) {
           alt={pair.before.label}
           className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
         />
-        <div className="absolute top-3 left-3 bg-dark-primary/80 text-white px-2 py-1 text-xs font-label tracking-wider border-l-2 border-gold-primary">
-          {pair.before.label}
-        </div>
       </div>
       <div className="relative overflow-hidden border border-outline-variant">
         <img
@@ -23,75 +16,28 @@ function PortfolioCard({ pair }: { pair: PortfolioPair }) {
           alt={pair.after.label}
           className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
         />
-        <div className="absolute top-3 left-3 bg-gold-primary/90 text-dark-primary px-2 py-1 text-xs font-label tracking-wider">
-          {pair.after.label}
-        </div>
       </div>
     </div>
   );
 }
 
 export default function Portfolio() {
-  const [activeFilter, setActiveFilter] = useState('svi');
-
-  const filtered =
-    activeFilter === 'svi'
-      ? portfolioPairs
-      : portfolioPairs.filter((p) => p.category === activeFilter);
-
   return (
     <>
       {/* Header Section */}
       <div className="max-w-container-max mx-auto px-4 md:px-gutter pt-24 md:pt-32 pb-12">
         <div className="mb-12 border-l-4 border-gold-primary pl-6">
           <h1 className="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-white mb-4">
-            Portfolio: Pre i Posle
+            Portfolio radova
           </h1>
-          <p className="font-body-lg text-body-lg text-text-light max-w-2xl">
-            Uvid u proces našeg rada. Uporedite fazu pre i posle završetka radova.
+          <p className="font-body-lg text-body-lg text-text-light">
+            Pregled izvedenih radova kroz različite faze — konstrukcija, montaža gipsanih ploča, bandažiranje, gletovanje, krečenje i završna obrada.
           </p>
-        </div>
-
-        {/* Filter Controls */}
-        <div className="flex flex-wrap gap-4 mb-12">
-          <button
-            type="button"
-            onClick={() => setActiveFilter('svi')}
-            className={`px-6 py-3 font-label text-label border rounded-sm transition-all ${
-              activeFilter === 'svi'
-                ? 'bg-gold-primary text-dark-primary border-gold-primary'
-                : 'border-outline-variant text-text-light hover:border-gold-primary'
-            }`}
-          >
-            Svi projekti
-          </button>
-          <button
-            type="button"
-            onClick={() => setActiveFilter('gips')}
-            className={`px-6 py-3 font-label text-label border rounded-sm transition-all ${
-              activeFilter === 'gips'
-                ? 'bg-gold-primary text-dark-primary border-gold-primary'
-                : 'border-outline-variant text-text-light hover:border-gold-primary'
-            }`}
-          >
-            Gipsarski radovi
-          </button>
-          <button
-            type="button"
-            onClick={() => setActiveFilter('moler')}
-            className={`px-6 py-3 font-label text-label border rounded-sm transition-all ${
-              activeFilter === 'moler'
-                ? 'bg-gold-primary text-dark-primary border-gold-primary'
-                : 'border-outline-variant text-text-light hover:border-gold-primary'
-            }`}
-          >
-            Molerski radovi
-          </button>
         </div>
 
         {/* Before/After Grid */}
         <div className="space-y-12">
-          {filtered.map((pair) => (
+          {portfolioPairs.map((pair) => (
             <PortfolioCard key={pair.id} pair={pair} />
           ))}
         </div>
