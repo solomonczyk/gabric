@@ -3,7 +3,7 @@
   "repository": "solomonczyk/compromise",
   "branch": "master",
   "starting_commit": "8fd37e07a05c17c603c76e6e9c9c93a1e8bb9d23",
-  "final_commit": "e2d20f9591b4dbe750c191804beff25950c98c90",
+  "final_commit": "2a648ec313e63451bea2e96a76af1b6f7b8e9142",
   "legal_prelaunch_base_integrated": true,
   "mvp_model_locked": "VERIFIED_JOB_BOARD_ONLY",
   "not_recruitment_agency": true,
@@ -40,7 +40,7 @@
   },
   "git": {
     "committed": true,
-    "pushed": false,
+    "pushed": true,
     "git_clean_after_work": true
   }
 }
