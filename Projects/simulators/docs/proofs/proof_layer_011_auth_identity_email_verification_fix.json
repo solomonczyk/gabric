@@ -1,0 +1,101 @@
+{
+  "layer": "011",
+  "title": "AUTH_IDENTITY_EMAIL_VERIFICATION_FIX",
+  "date": "2026-06-17",
+  "verdict": "ACCEPTED",
+  "email_spam": {
+    "real_smtp_used_by_tests_before": true,
+    "real_smtp_used_by_tests_after": false,
+    "fake_domains_blocked": [
+      "test.com",
+      "example.com",
+      "example.org",
+      "example.net",
+      "invalid",
+      "localhost",
+      "*.test"
+    ],
+    "fake_email_sender_used_in_tests": true,
+    "emails_sent_by_tests_recorded": true,
+    "safety_guard_in_real_sender": true,
+    "safety_guard_logs_domain_only": true
+  },
+  "db_identity": {
+    "operator_account_checked": true,
+    "operator_email_in_db": false,
+    "operator_plus_addressed_accounts_found": 18,
+    "operator_plus_addressed_accounts_verified": 18,
+    "duplicate_users": 0,
+    "total_users": 59,
+    "test_domain_users_test.com": 27,
+    "test_domain_users_example.com": 7,
+    "verified_users": 20,
+    "unverified_users": 39,
+    "cleanup_performed": false,
+    "cleanup_required": false,
+    "note": "No duplicates exist. All operator plus-addressed accounts are verified. @test.com and @example.com users are test artifacts but do not cause duplicates."
+  },
+  "backend": {
+    "login_sends_verification_email": false,
+    "register_existing_verified_sends_email": false,
+    "register_existing_unverified_auto_resend": false,
+    "duplicate_registration_blocked": true,
+    "resend_explicit_only": true,
+    "resend_throttled": true,
+    "resend_safe_enumeration_response": true,
+    "email_normalized_used_everywhere": true,
+    "unique_index_migration_created": true,
+    "verify_email_localization": {
+      "ru-RU": true,
+      "en-US": true
+    }
+  },
+  "frontend": {
+    "verified_login_bypasses_verify_gate": true,
+    "stale_local_state_override_prevented": true,
+    "verify_gate_condition": "user.email_verified === false",
+    "verify_gate_not_shown_for_unauthenticated": true,
+    "verify_gate_not_shown_for_verified": true,
+    "resend_button_does_not_auto_fire": true,
+    "resend_rate_limited": true,
+    "clear_debug_button_removed": true,
+    "check_status_shows_proper_message": true,
+    "error_state_shows_localized_text": true
+  },
+  "tests": {
+    "backend_focused_all_pass": true,
+    "backend_test_count": 33,
+    "verified_user_login_no_email_test": true,
+    "duplicate_verified_registration_no_email_test": true,
+    "duplicate_unverified_registration_no_auto_resend_test": true,
+    "resend_explicit_and_throttled_test": true,
+    "resend_unknown_email_safe_response_test": true,
+    "resend_already_verified_test": true,
+    "me_returns_db_email_verified_true_test": true
+  },
+  "vps": {
+    "database_checked": "trainer_platform_staging on 152.53.227.37",
+    "commit_deployed": "83a4641",
+    "commit_matches_origin_master": true,
+    "health_endpoint": true,
+    "ready_endpoint": true,
+    "email_module_verified": true,
+    "migrations_applied": ["010_backfill_email_verified", "011_add_unique_normalized_email_index"],
+    "email_logs_checked": true,
+    "real_smtp_configured": true,
+    "email_verification_enabled": true,
+    "browser_acceptance_test1_invalid_token_auth_gate": "PASS",
+    "browser_acceptance_test2_verified_user_login": "PASS",
+    "screenshots_captured": [
+      "layer-011-01-invalid-token-auth-gate.png",
+      "layer-011-02-logged-in-trainer-page.png"
+    ]
+  },
+  "final_state": {
+    "layer_011": "AUTH_IDENTITY_FIXED_PENDING_OPERATOR_REVIEW",
+    "existing_verified_user_reverification_required": false,
+    "email_spam_stopped": true,
+    "production_accepted": false,
+    "release_allowed": false
+  }
+}
